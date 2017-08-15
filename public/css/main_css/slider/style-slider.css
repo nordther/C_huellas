@@ -1,0 +1,15 @@
+.content-slider{
+	position: static;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
+.element_slider{
+	width: 100%;
+	height: 900px;
+	display: none;
+}
+.element_slider_show{
+    display: block;
+}
+

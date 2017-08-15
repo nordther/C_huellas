@@ -1,0 +1,24 @@
+
+try {
+
+    //tu código
+
+}catch (\Illuminate\Database\QueryException $e){
+    //tu código
+}
+
+
+jquery
+
+ $(document).ready(function (){
+   /* Valida el tamaño maximo de un archivo adjunto */
+   $('.input-file').change(function (){
+     var sizeByte = this.files[0].size;
+     var siezekiloByte = parseInt(sizeByte / 1024);
+
+     if(siezekiloByte > $(this).attr('size')){
+         alert('El tamaño supera el limite permitido');
+         $(this).val('');
+     }
+   });
+});

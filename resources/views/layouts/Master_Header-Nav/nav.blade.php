@@ -1,0 +1,355 @@
+@section('content-nav')
+
+	
+
+	@if (($data['authconfirm'] == false) && ($data['multimediaAuth'] == false))
+		
+
+
+		<nav class="nav bg-content-neutro-opacity main-menu-hidde fade-in is-paused" id="main-menu">
+
+			<ul class="main-menu">
+
+				<li>
+
+					<a href="/{{ $data['roll'] }}"  data="/Inicio" onclick="showSubMenu1()" class="a-font-size-1">
+						
+					@foreach($data['dll']['icon'] as $dll)
+	
+						@if ($dll->srcapp_filename == 'about.png')
+							<img src="{{asset($dll->srcapp_dir.$dll->srcapp_filename)}}" alt="" class="img-dm-9 img-margin-top-4">
+						@endif
+	
+					@endforeach	
+						Inicio
+					</a>
+
+				</li>	
+
+				<li id="targetLoginUsers">
+
+					<a href="#ingresar"  data="/Ingresar" id="nav_btn_login" class="a-font-size-1">
+
+						@foreach($data['dll']['icon'] as $dll)
+	
+							@if ($dll->srcapp_filename == 'arrow-down.png')
+								<img src="{{asset($dll->srcapp_dir.$dll->srcapp_filename)}}" alt="" class="img-dm-9 img-margin-top-4">
+							@endif
+	
+						@endforeach
+
+						Ingresar al Sistema
+
+					</a>
+
+				</li>
+
+				@yield('content-login')
+
+				@include('alerts.formAlertAuth')	
+
+				<li class="nav-form-login-hidde" id="nav-form-login-hidde" class="a-font-size-1">
+
+					<a href="#noticias" data="/Novedades">
+
+					@foreach($data['dll']['icon'] as $dll)
+	
+						@if ($dll->srcapp_filename == 'newtopics.png')
+							<img src="{{asset($dll->srcapp_dir.$dll->srcapp_filename)}}" alt="" class="img-dm-9 img-margin-top-4">
+						@endif
+	
+					@endforeach
+
+						Novedades
+
+					</a>
+
+				</li>
+
+				<li class="nav-form-login-hidde" id="nav-form-login-hidde" class="a-font-size-1">
+
+					<a href="#quienessomos" data="/Quienes somos">
+
+					@foreach($data['dll']['icon'] as $dll)
+	
+						@if ($dll->srcapp_filename == 'fundacionData.png')
+							<img src="{{asset($dll->srcapp_dir.$dll->srcapp_filename)}}" alt="" class="img-dm-9 img-margin-top-4">
+						@endif
+	
+					@endforeach
+
+						Quienes somos
+
+					</a>
+
+				</li>
+
+				<li class="nav-form-login-hidde" id="nav-form-login-hidde" class="a-font-size-1">
+
+					<a href="#contactenos" data="/Contactenos">
+
+					@foreach($data['dll']['icon'] as $dll)
+	
+						@if ($dll->srcapp_filename == 'contact.png')
+							<img src="{{asset($dll->srcapp_dir.$dll->srcapp_filename)}}" alt="" class="img-dm-9 img-margin-top-4">
+						@endif
+	
+					@endforeach
+
+						Contactenos 
+
+					</a>
+
+				</li>
+
+
+				<li>
+
+					<a href="#Donacion" class="a-font-size-1">
+
+					@foreach($data['dll']['icon'] as $dll)
+	
+						@if ($dll->srcapp_filename == 'donation.png')
+							<img src="{{asset($dll->srcapp_dir.$dll->srcapp_filename)}}" alt="" class="img-dm-9 img-margin-top-4">
+						@endif
+	
+					@endforeach
+
+						Donativo
+
+					</a>
+
+				</li>
+
+				<li>
+
+					<a href="/Multimedia" class="a-font-size-1">
+
+					@foreach($data['dll']['icon'] as $dll)
+	
+						@if ($dll->srcapp_filename == 'media.png')
+							<img src="{{asset($dll->srcapp_dir.$dll->srcapp_filename)}}" alt="" class="img-dm-9 img-margin-top-4">
+						@endif
+	
+					@endforeach
+
+						Multimedia
+
+					</a>
+
+				</li>	
+											
+			</ul>
+
+		</nav>
+
+	@elseif(($data['authconfirm'] == true)&&($data['multimediaAuth'] == false))
+
+		<nav class="nav bg-content-neutro-opacity main-menu-hidde fade-in is-paused" id="main-menu">
+
+			<ul class="main-menu">
+
+				<li>
+
+					<a href="/{{ $data['roll'] }}"  data="/Inicio" onclick="showSubMenu1()" class="a-font-size-1">
+
+						<img src="{{asset('img/icon/icon1.png')}}" alt="" class="img-dm-9 img-margin-top-4">
+
+						Inicio
+
+					</a>
+
+				</li>				
+
+				<li id="targetGestionUsers">
+
+					<a class="a-font-size-1">
+
+						<img src="{{asset('img/icon/userAdd.png')}}" class="img-dm-9 img-margin-top-4" id="img-dm-8-login">
+
+						Gestion de Usuarios
+
+					</a>
+
+				</li>
+
+				<ul id="subMenuGestionUsers">
+					
+					<li>
+
+						<a href="/{{$data['roll']}}/buscar-usuario" class="a-font-size-1">
+							
+							<img src="{{asset('img/icon/searchIcon.png')}}" class="img-dm-9 img-margin-top-4" >
+
+							Buscar Usuario
+
+						</a>
+
+					</li>
+					@if($data['permisos']['create'] == true)
+					<li>
+
+						<a href="/Admin/crear/usuario" class="a-font-size-1">
+							
+							<img src="{{asset('img/icon/createUsers.png')}}" class="img-dm-9 img-margin-top-4" >
+
+							Crear Usuario
+
+						</a>
+						
+
+					</li>
+					
+					@endif
+
+				</ul>
+
+				<li id="targetGestionAgenda">
+					
+					<a class="a-font-size-1">
+
+						<img src="{{asset('img/icon/agenda.png')}}" class="img-dm-9 img-margin-top-4" id="img-dm-8-login">
+
+						Gestionar Agenda
+
+					</a>
+
+				</li>
+
+				<ul id="subMenuGestionAgenda">
+					
+					<li>
+
+						<a href="/{{$data['roll']}}/buscar-agenda" class="a-font-size-1">
+							
+							<img src="{{asset('img/icon/searchIcon.png')}}" class="img-dm-9 img-margin-top-4" id="img-dm-8-login">
+
+							Buscar Agenda
+
+						</a>
+
+					</li>
+					@if($data['permisos']['create'] == true)
+					<li>
+
+						<a href="/Admin/crear/agenda" class="a-font-size-1">
+							
+							<img src="{{asset('img/icon/createAgenda.png')}}" class="img-dm-9 img-margin-top-4" id="img-dm-8-login">
+
+							Crear Agenda
+
+						</a>
+						
+
+					</li>
+					@endif
+
+				</ul>
+
+				<li id="targetGestionMultimedia">
+					
+					<a class="a-font-size-1">
+
+						<img src="{{asset('img/icon/agenda.png')}}" class="img-dm-9 img-margin-top-4" id="img-dm-8-login">
+
+						Gestionar Multimedia
+
+					</a>
+
+				</li>
+
+				<ul id="subMenuGestionMultimedia">
+					
+					<li>
+
+						<a href="/{{$data['roll']}}/buscar-multimedia" class="a-font-size-1">
+							
+							<img src="{{asset('img/icon/searchIcon.png')}}" class="img-dm-9 img-margin-top-4" id="img-dm-8-login">
+
+							Buscar Multimedia
+
+						</a>
+
+					</li>
+					@if($data['permisos']['create'] == true)
+					<li>
+
+						<a href="/Admin/subir/subir-multimedia" class="a-font-size-1">
+							
+							<img src="{{asset('img/icon/createAgenda.png')}}" class="img-dm-9 img-margin-top-4" id="img-dm-8-login">
+
+							Subir Multimedia
+
+						</a>
+						
+
+					</li>
+					@endif
+
+				</ul>						
+							
+			</ul>
+
+		</nav>
+
+	@elseif($data['multimediaAuth'] == true)
+
+		<nav class="nav bg-content-neutro-opacity main-menu-hidde fade-in is-paused" id="main-menu">
+
+			<ul class="main-menu" class="a-font-size-1">
+
+				<li>
+
+					<a href="/{{ $data['roll'] }}"  data="/Inicio" onclick="showSubMenu1()">
+
+						<img src="{{asset('img/icon/icon1.png')}}" alt="" class="img-dm-9 img-margin-top-4">
+
+						Inicio
+
+					</a>
+
+				</li>				
+
+				<li>
+
+					<a href="/{{ $data["roll"] }}/Videos" class="a-font-size-1">
+
+						<img src="{{asset('img/icon/icon9.png')}}" class="img-dm-9 img-margin-top-4" id="img-dm-8-login">
+
+						Videos
+
+					</a>
+
+				</li>	
+
+				<li>
+
+					<a href="/{{ $data["roll"] }}/Audios" class="a-font-size-1">
+
+						<img src="{{asset('img/icon/icon10.png')}}" class="img-dm-9 img-margin-top-4" id="img-dm-8-login">
+
+						Audios
+
+					</a>
+
+				</li>	
+
+				<li>
+
+					<a href="/{{ $data["roll"] }}/Galeria" class="a-font-size-1">
+
+						<img src="{{asset('img/icon/icon13.png')}}" class="img-dm-9 img-margin-top-4" id="img-dm-8-login">
+
+						Galeria de Arte
+
+					</a>
+
+				</li>					
+							
+			</ul>
+
+		</nav>
+
+	@endif
+	
+@endsection

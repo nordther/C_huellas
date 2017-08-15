@@ -1,0 +1,40 @@
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+.fade-in {
+  opacity: 0;
+  animation: fadeIn .1s ease-in 1 forwards;
+}
+
+.is-paused {
+  animation-play-state: paused;
+}
+.img-toolts-login-pasive{
+	transform: rotate(270deg);
+}
+.img-toolts-login-active{
+	transform: rotate(0deg);
+	background-color:#353535;
+	border-radius: 50%;
+	width: 24px;
+	height: 24px;
+	padding: 4px;
+}
+.form-title:hover{
+	background-color: #38ABA0;
+	-webkit-transition: background 0.5s ease;
+	   -moz-transition: background 0.5s ease;
+	    -ms-transition: background 0.5s ease;
+	     -o-transition: background 0.5s ease;
+	        transition: background 0.5s ease;
+}
+/* .input-content-submit:hover{
+	background-color: #38ABA0;
+	-webkit-transition: background 0.5s ease;
+	   -moz-transition: background 0.5s ease;
+	    -ms-transition: background 0.5s ease;
+	     -o-transition: background 0.5s ease;
+	        transition: background 0.5s ease;
+} */

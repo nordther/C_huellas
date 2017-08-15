@@ -1,0 +1,104 @@
+select * from hojasvidas as hv
+		      inner join
+		      contactos as ct
+		      on 
+		      hv.hv_id_persona = ct.ct_id_persona,
+
+		      inner join
+		      estudios as est
+		      on
+		      hv.hv_id_persona = est.est_id_persona,
+
+		      inner join
+		      trabajo as tra
+		      on
+		      hv.hv_id_persona = tra.tra_id_persona,
+
+		      inner join
+		      infofamiliar as inffam
+		      on
+		      hv.hv_id_persona = inffam.inffam_id_persona,
+
+		      inner join
+		      infoextra as infext
+		      on
+		      hv.hv_id_persona = infext.infext_id_persona
+		      where hv.hv_id_persona = valor limit 1;
+
+select * from contactos as ct 
+			  inner join 
+			  datosgenerales as dg
+			  on 
+			  ct.ct_dg_id = dg.dg_id
+			  where ct.ct_id_persona = valor ;
+
+select * from empleo as emple 
+			  inner join 
+			  datosgenerales as dg
+			  on 
+			  emple.emple_dg_id = dg.dg_id
+			  where emple.emple_id_persona = valor ;
+
+select * from infofamiliar as inffam 
+			  inner join 
+			  datosgenerales as dg
+			  on 
+			  inffam.inffam_dg_id = dg.dg_id
+			  where inffam.inffam_id_persona = valor ;			  			  
+
+
+Entidad [Hojasvidas]
+
+	hv_id
+	hv_id_persona		      		
+
+Entidad [contactos] -> datosgenerales
+
+	ct_id
+	ct_id_persona
+	ct_dg_id
+	
+Entidad [estudios]
+	
+	est_id
+	est_id_persona
+	est_fecha_inicio
+	est_fecha_finalizo
+	est_titulo
+
+Entidad [empleo] -> datosgenerales
+	
+	emple_id
+	emple_id_persona
+	emple_nombre_entidad
+	emple_dg_id
+	emple_cargo	
+	emple_recomendacion	
+	emple_tiempo
+
+Entidad [infofamiliar] -> datosgenerales
+
+	inffam_id
+	inffam_id_persona
+	inffam_parentesco
+	inffam_ocupacion
+	inffam_dg_id	
+	
+Entidad [infoextra]
+	
+	infext_id
+	infext_id_persona
+	infext_destreza
+	infext_nivel
+
+Entidad [datosgenerales] <- contactos 
+		[datosgenerales] <- empleo 
+		[datosgenerales] <- infofamiliar 
+	
+	dg_id
+	dg_nombre
+	dg_apellido	
+	dg_telefono
+	dg_celular
+	dg_direccion
+	dg_correo

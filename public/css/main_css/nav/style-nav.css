@@ -1,0 +1,133 @@
+.nav{	
+	position: fixed;
+	float: right;
+	height: 100%;
+	top: 50px;
+	border-top: 1px solid #252525;
+	border-left: 1px solid #252525;
+	-webkit-box-shadow: 0.2px 0.2px 0.2px 0.2px rgba(53,53,53,0.8);
+	box-shadow: 0.2px 0.2px 0.2px 0.2px rgba(53,53,53,0.8);	
+	width: 230px;	
+	z-index: 3000;
+}
+.nav > ul{	
+	width: 88%;	
+	text-align: center;
+	margin: 10px auto;
+}
+
+.nav > ul > ul{
+	width: 88%;	
+	text-align: center;
+	margin: 5px auto;
+}
+
+.nav > ul > li{
+	height: 37px;
+	border-right: 5px solid transparent;
+	border-left: 5px solid transparent;
+	border-radius: 1px;
+	background-color: #4B4B4B;
+	position: relative;
+	text-align: center;	
+	margin-bottom: 5px;	
+	list-style: none;
+	-webkit-box-shadow: 0.5px 0.5px 0.5px 0.5px rgba(53,53,53,0.8);
+	box-shadow: 0.5px 0.5px 0.5px 0.5px rgba(53,53,53,0.8);
+}
+
+.nav > ul > ul > li{
+	height: 37px;
+	border-right: 5px solid transparent;
+	border-left: 5px solid transparent;
+	border-radius: 1px;
+	background-color: #4B4B4B;
+	position: relative;
+	text-align: center;	
+	margin-bottom: 5px;	
+	list-style: none;
+	-webkit-box-shadow: 0.5px 0.5px 0.5px 0.5px rgba(53,53,53,0.8);
+	box-shadow: 0.5px 0.5px 0.5px 0.5px rgba(53,53,53,0.8);
+}
+.nav > ul > li > a{
+	text-decoration: none;
+	color: #41DFCF;
+	position: relative;
+	left: 15px;
+	float: left;
+}
+
+.nav > ul >ul >li > a{
+	text-decoration: none;
+	color: #41DFCF;
+	position: relative;
+	left: 15px;
+	float: left;
+}
+
+.nav > ul > li > a > img{
+	padding-right: 20px;
+}
+
+.nav > ul > ul > li > a > img{
+	padding-right: 20px;
+}
+
+
+.nav > ul > li:hover{
+	border-right:  5px solid #41DFCF;	
+	border-left: 5px solid #41DFCF;	
+}
+
+.nav > ul > ul > li:hover{
+	border-right:  5px solid #41DFCF;	
+	border-left: 5px solid #41DFCF;	
+}
+
+.main-menu-hidde{
+	display: none;
+}
+.main-menu-show{
+	display: block;
+}
+.nav-form-login-hidde{
+	margin-top: 4px;
+}
+.content-search{
+	position: relative;
+	left: 32%;
+	top: -54px;
+	width: 600px;
+	height: 48px;
+	float: left;
+	margin: auto;
+}
+.content-search > .content-search-col > input[type="text"]{
+	margin-top: 8px;
+}
+.content-search > .content-search-col > button{
+	margin-top: 15px;
+}
+.content-search-col{
+	float: left;
+	padding-left: 8px;
+}
+.content-search-col-dm-w-1{
+	width: 400px;
+}
+.content-search-col-dm-w-2{
+	width: 200px;
+}
+.content-search-col-dm-w-3{
+	width: 150px;
+}
+.content-search-col-dm-w-4{
+	width: 100px;
+}
+.content-search-col-dm-w-5{
+	width: 50px;
+}
+/*
+.nav-form-login-show{
+	margin-top: -110px;
+} */

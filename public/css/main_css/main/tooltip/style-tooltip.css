@@ -1,0 +1,26 @@
+.form-tooltip{
+	position: fixed;
+	width: 150px;
+	height: 25px;
+	background-color: #3C3C3C;
+	color: #FFFFFF;	
+	right: 8%;
+	-webkit-box-shadow: 1px 1px 1px rgba(53,53,53,0.8);;
+	-moz-box-shadow: 1px 1px 1px rgba(53,53,53,0.8);;
+	-ms-box-shadow: 1px 1px 1px rgba(53,53,53,0.8);;
+	-o-box-shadow: 1px 1px 1px rgba(53,53,53,0.8);;
+	box-shadow: 1px 1px 1px rgba(53,53,53,0.8);;
+	padding-top: 10px;
+	padding-left: 10px;
+	border-radius: 2px;
+}
+
+
+.form-tooltip-position-perfil-1{
+	top:75px;
+	right: 136px;
+}
+.form-tooltip-position-perfil-2{
+	top:133px;
+	right: 136px;
+}

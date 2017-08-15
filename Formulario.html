@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<meta charset="utf-8">
+		<title>Ingreso a la plataforma virtual</title>
+		<style>
+			* {
+				padding: 0px;
+				margin: 0px;
+				font-family: 'Roboto', sans-serif;
+			}
+
+			body {
+				background: #ecf0f1;
+			}
+
+			footer {
+				margin: 0px auto;
+				background: #3498db;
+				width: 450px;
+				padding: 10px 20px;
+				text-align: center;
+				color: white;
+				border-bottom: 4px solid #2980b9;
+				margin-top: 50px;
+				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+				border-left: 1px solid #2980b9;
+				border-right: 1px solid #2980b9;
+			}
+
+			form {
+				background: white;
+				width: 450px;
+				height: 500px;
+				margin: 120px auto ;
+				margin-bottom: 0px;
+				border-bottom: 4px solid #3498db;
+				border-bottom-right-radius: 8px;
+				border-bottom-left-radius: 8px;
+				border-top-right-radius: 8px;
+				border-top-left-radius: 8px;
+				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			}
+
+			form label {
+				background: #3498db;
+				text-align: center;
+				display: block;
+				padding-top: 25px;
+				padding-bottom:  25px;
+				color: white;
+				border-bottom: 4px solid #2980b9;
+				border-top-right-radius: 8px;
+				border-top-left-radius: 8px;
+			}
+
+			form img{
+				margin: 0px 175px;
+				margin-top: 30px;
+			}
+
+			form div{
+				margin: 37.5px 90px;
+			}
+
+			form div input[type="text"],
+			input[type="password"],
+			input[type="email"] {
+				margin-bottom: 20px;
+				width: 240px;
+				height: 40px;
+				padding-left: 25px;
+				text-align: left;
+				border: 0.5px solid #bdc3c7;
+				border-radius: 5px;
+			}
+			form div input:hover{
+				border: 0.5px solid #3498db;
+			}
+
+			form div input[type="submit"]{
+				background: #3498db;
+				border-right: none;
+				border-left: none;
+				border-top: none;
+				cursor: pointer;
+				width: 270px;
+				height: 40px;
+				border-bottom: 4px solid #2980b9;
+				color: white;
+				transition: all 0.5s ease;
+			}
+
+			form div input[type="submit"]:hover{
+				color: #FFFFFF;
+				background: #4DACDD;
+				border-bottom: 4px solid #bdc3c7;
+			}
+
+			form div input[type="submit"]:focus{
+				outline: none;
+			}
+
+			footer .hiper{
+				text-decoration: none;
+				color: white;
+				transition: all 0.5 ease;
+			}
+
+			footer .hiper:hover{
+				color: black;
+			}
+		</style>
+	</head>
+	<body>
+		<form action="#">
+			<label for="#">REGISTRO</label><br>
+			<img src="http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/user-male-icon.png" width="100px">
+				<div>		
+					<input type="text" name="user" placeholder="Usuario"><br>
+					<input type="password" name="userpass" placeholder="Contraseña"><br>
+					<input type="email" name="usermail" placeholder="Dirección de correo"><br>
+					<input type="submit" name="Enviar">
+				</div>
+		</form>
+		<footer>
+			<a href="http://fb.com/CesarttAndres" target="_blank" class="hiper">Andres Gutierrez</a> &copy | Practicante en HTML y CSS<br>
+			<hr>
+			Estudiante del colegio <a href="http://fb.com/ienarcisomatus" target="_blank" class="hiper">Narciso José Matus Torres
+		</footer>
+	</body>
+</html>

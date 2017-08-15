@@ -1,0 +1,47 @@
+.scroll{overflow-x: hidden;}
+.scroll::-webkit-scrollbar-track{border-radius: 10px;background-color: transparent;}
+.scroll::-webkit-scrollbar{width: 6px;background-color: #25B1A9;}
+.scroll::-webkit-scrollbar-bottom{width: 6px;background-color: transparent;}
+.scroll::-webkit-scrollbar-thumb{border-radius: 5px;background-color: #555;}
+.scroll::-webkit-scrollbar-thumb-bottom{border-radius: 5px;background-color: #555;}
+
+body{overflow-x: hidden;}
+body::-webkit-scrollbar-track{border-radius: 10px;background-color: transparent;}
+body::-webkit-scrollbar{width: 6px;background-color: #2A2A2A;}
+body::-webkit-scrollbar-bottom{width: 6px;background-color: transparent;}
+body::-webkit-scrollbar-thumb{border-radius: 4px;background-color: #41DFCF;}
+body::-webkit-scrollbar-thumb-bottom{border-radius: 4px;background-color: #41DFCF;}
+
+body{overflow-x: hidden;}
+body::-moz-scrollbar-track{border-radius: 10px;background-color: transparent;}
+body::-moz-scrollbar{width: 6px;background-color: #2A2A2A;}
+body::-moz-scrollbar-bottom{width: 6px;background-color: transparent;}
+body::-moz-scrollbar-thumb{border-radius: 4px;background-color: #41DFCF;}
+body::-moz-scrollbar-thumb-bottom{border-radius: 4px;background-color: #41DFCF;}
+
+
+body{overflow-x: hidden;}
+body::-ms-scrollbar-track{border-radius: 10px;background-color: transparent;}
+body::-ms-scrollbar{width: 6px;background-color: #2A2A2A;}
+body::-ms-scrollbar-bottom{width: 6px;background-color: transparent;}
+body::-ms-scrollbar-thumb{border-radius: 4px;background-color: #41DFCF;}
+body::-ms-scrollbar-thumb-bottom{border-radius: 4px;background-color: #41DFCF;}
+
+body{overflow-x: hidden;}
+body::-o-scrollbar-track{border-radius: 10px;background-color: transparent;}
+body::-o-scrollbar{width: 6px;background-color: #2A2A2A;}
+body::-o-scrollbar-bottom{width: 6px;background-color: transparent;}
+body::-o-scrollbar-thumb{border-radius: 4px;background-color: #41DFCF;}
+body::-o-scrollbar-thumb-bottom{border-radius: 4px;background-color: #41DFCF;}
+
+body{
+	  scrollbar-base-color: #41DFCF;
+	  scrollbar-3dlight-color: #A0D8D2;
+	  scrollbar-highlight-color: #373737;
+	  scrollbar-track-color: #373737;
+	  scrollbar-arrow-color: #41DFCF;
+	  scrollbar-shadow-color: #41DFCF;
+	  scrollbar-dark-shadow-color: #41DFCF;
+
+}
+

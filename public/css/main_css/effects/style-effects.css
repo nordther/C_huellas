@@ -1,0 +1,194 @@
+/*****************************************************************************************************************************************/
+/*Efecto cardview*/
+.cardview-effect-white{
+	border-top: 1px solid #efefef;
+	border-left: 1px solid #e8e8e8;
+	border-bottom: 1px solid #e2e2e2;
+	border-right:  1px solid #e8e8e8;
+	background-color: #FFFFFF;	
+	height: auto;
+	box-shadow: 0 1px 1px 0 rgba(0,0,0,0.08), 0 1px 1px 0 rgba(0,0,0,0.08);    
+}
+/* .cardview-margin-all-1{
+	margin: 30px;
+} */
+/* .cardview-dm-1{
+	width: 400px;
+} */
+
+.cardview-img-dm-generity{
+	width: 98%;
+	height: 300px;
+}
+.cardview-footer{
+	border-top: 1px solid #efefef;	
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+	text-align: center;
+}
+.cardview-header{
+	width: 100%;
+	background-color: #00D7CA;
+	border-bottom: 1px solid rgba(31,159,151,0.9);
+	margin-bottom: 3px;	
+	box-shadow: inset 0 1px 1px 0 rgba(31,159,151,0.9);
+}
+.cardview-header-margin-auto > h1,
+.cardview-header-margin-auto > h2,
+.cardview-header-margin-auto > h3,
+.cardview-header-margin-auto > h4,
+.cardview-header-margin-auto > h5,
+.cardview-header-margin-auto > h6{
+	position: relative;
+	top: 25%;
+	color: #FFFFFF;
+	text-shadow: 0 -1px 0 rgba(0,0,0,.2);	
+}
+.cardview-article{
+	width: 100%;
+	height: auto;
+}
+.cardview-article > p{
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+.cardview-article > img{
+	position: relative;
+	margin: auto;
+}
+.cardview-footer-margin-auto > button{
+	position: relative;
+	top: 25%;
+	margin:  3px;
+}
+
+.cardview-header-dm-1{
+	height: 100px;
+}
+.cardview-header-dm-2{
+	height: 75px;
+}
+.cardview-header-dm-3{
+	height: 50px;
+}
+.cardview-header-dm-4{
+	height: 25px;
+}
+
+.cardview-footer-dm-1{
+	height: 100px;
+}
+.cardview-footer-dm-2{
+	height: 75px;
+}
+.cardview-footer-dm-3{
+	height: 50px;
+}
+.cardview-footer-dm-4{
+	height: 25px;
+}
+
+.cardview-border-top-right-radius-1{
+	border-top-right-radius: 10px;
+}
+.cardview-border-top-right-radius-2{
+	border-top-right-radius: 5px;
+}
+.cardview-border-top-right-radius-3{
+	border-top-right-radius: 1px;
+}
+
+.cardview-border-top-left-radius-1{
+	border-top-left-radius: 10px;
+}
+.cardview-border-top-left-radius-2{
+	border-top-left-radius: 5px;
+}
+.cardview-border-top-left-radius-3{
+	border-top-left-radius: 1px;
+}
+
+.cardview-border-bottom-right-radius-1{
+	border-bottom-right-radius: 10px;
+}
+.cardview-border-bottom-right-radius-2{
+	border-bottom-right-radius: 5px;
+}
+.cardview-border-bottom-right-radius-3{
+	border-bottom-right-radius: 1px;
+}
+
+.cardview-border-bottom-left-radius-1{
+	border-bottom-left-radius: 10px;
+}
+.cardview-border-bottom-left-radius-2{
+	border-bottom-left-radius: 5px;
+}
+.cardview-border-bottom-left-radius-3{
+	border-bottom-left-radius: 1px;
+}
+
+/*
+		Apartado de figuras
+*/
+.form-arrow-right-tooltip:after{
+	content: '';
+	position: relative;
+	top: -70%;
+	left: 98%;
+	display: block;
+	width: 0;
+	height: 0;
+	transform: rotate(90deg);
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-bottom: 12px solid #3C3C3C;
+}
+.form-triagle-1:after{
+	content: '';
+	position: relative;
+	top: -130%;
+	left: 31%;
+	display: block;
+	width: 0;
+	height: 0;
+	border-left: 12px solid transparent;
+	border-right: 12px solid transparent;
+	border-bottom: 15px solid #646464;
+}
+
+/* .form-triagle-2:after{
+	content: '';
+	position: relative;
+	top: -111%;
+    left: 7%;
+	display: block;
+	width: 0;
+	height: 0;
+	border-left: 12px solid transparent;
+	border-right: 12px solid transparent;
+	border-bottom: 20px solid #4B4B4B;
+} */
+
+
+	
+@media (max-width: 375px){
+	.form-triagle-1:after{
+		content: '';
+		position: relative;
+		top: -90%;
+		left: 65%;
+		display: block;
+		width: 0;
+		height: 0;
+		border-left: 15px solid transparent;
+		border-right: 15px solid transparent;
+		border-bottom: 18px solid #646464;
+	}
+}	
+
+
+/******************************************/

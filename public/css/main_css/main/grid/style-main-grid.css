@@ -1,0 +1,152 @@
+.grid-1{
+		width: 95%;
+		-webkit-display: grid;
+		   -moz-display: grid;
+		    -ms-display: grid;
+		     -o-display: grid;
+		        display: grid;
+		        display: -ms-grid;
+		-webkit-grid-template-columns: auto auto auto auto;
+		   -moz-grid-template-columns: auto auto auto auto;
+			-ms-grid-template-columns: auto auto auto auto;
+			 -o-grid-template-columns: auto auto auto auto;
+			    grid-template-columns: auto auto auto auto;
+			    grid-columns         : auto auto auto auto;		
+		-webkit-grid-template-rows: auto auto;
+		   -moz-grid-template-rows: auto auto;
+		    -ms-grid-template-rows: auto auto;
+		     -o-grid-template-rows: auto auto;
+		        grid-template-rows: auto auto;
+		        grid-rows:1fr 1fr;
+		-webkit-grid-gap: 70px;
+		   -moz-grid-gap: 70px;
+			-ms-grid-gap: 70px;
+			 -o-grid-gap: 70px;
+			    grid-gap: 70px;	
+}
+
+.grid-2{
+		width: 95%;
+		-webkit-display: grid;
+		   -moz-display: grid;
+		    -ms-display: grid;
+		     -o-display: grid;
+		        display: grid;
+		        display: -ms-grid;
+		-webkit-grid-template-columns: auto auto auto;
+		   -moz-grid-template-columns: auto auto auto;
+			-ms-grid-template-columns: auto auto auto;
+			 -o-grid-template-columns: auto auto auto;
+			    grid-template-columns: auto auto auto;
+			    grid-columns         : auto auto auto;		
+		-webkit-grid-template-rows: auto auto;
+		   -moz-grid-template-rows: auto auto;
+		    -ms-grid-template-rows: auto auto;
+		     -o-grid-template-rows: auto auto;
+		        grid-template-rows: auto auto;
+		        grid-rows:1fr 1fr;
+		-webkit-grid-gap: 100px;
+		   -moz-grid-gap: 100px;
+			-ms-grid-gap: 100px;
+			 -o-grid-gap: 100px;
+			    grid-gap: 100px;	
+	background-color: transparent;		    
+} 
+
+
+
+.label-dm{
+	font-size: 22px;
+	left: 5px;
+	float: bottom;
+}
+.label-diment-title-1{
+	font-size: 25px;
+	float: bottom;
+}
+.label-diment-title-2{
+	font-size: 20px;
+	float: bottom;
+}
+.header-topic:before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    right: 75%;
+    width: 0;
+    height: 0;
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;  
+    border-top: 28px solid rgba(53,53,53,0.8);    
+    transition: .5s all ease;
+}
+	
+
+	
+
+@media (max-width: 375px){
+	
+	
+	.grid-1{
+		width: 95%;
+		-webkit-display: grid;
+		   -moz-display: grid;
+		    -ms-display: grid;
+		     -o-display: grid;
+		        display: grid;
+		        display: -ms-grid;
+		-webkit-grid-template-columns: auto;
+		   -moz-grid-template-columns: auto;
+			-ms-grid-template-columns: auto;
+			 -o-grid-template-columns: auto;
+			    grid-template-columns: auto;
+			    grid-columns         : auto;		
+		-webkit-grid-template-rows: auto auto;
+		   -moz-grid-template-rows: auto auto;
+		    -ms-grid-template-rows: auto auto;
+		     -o-grid-template-rows: auto auto;
+		        grid-template-rows: auto auto;
+		        grid-rows:1fr 1fr;
+		-webkit-grid-gap: 65px;
+		   -moz-grid-gap: 65px;
+			-ms-grid-gap: 65px;
+			 -o-grid-gap: 65px;
+			    grid-gap: 65px;	
+}
+
+.grid-2{
+		width: 95%;
+		-webkit-display: grid;
+		   -moz-display: grid;
+		    -ms-display: grid;
+		     -o-display: grid;
+		        display: grid;
+		        display: -ms-grid;
+		-webkit-grid-template-columns: auto;
+		   -moz-grid-template-columns: auto;
+			-ms-grid-template-columns: auto;
+			 -o-grid-template-columns: auto;
+			    grid-template-columns: auto;
+			    grid-columns         : auto;		
+		-webkit-grid-template-rows: auto auto;
+		   -moz-grid-template-rows: auto auto;
+		    -ms-grid-template-rows: auto auto;
+		     -o-grid-template-rows: auto auto;
+		        grid-template-rows: auto auto;
+		        grid-rows:1fr 1fr;
+		-webkit-grid-gap: 65px;
+		   -moz-grid-gap: 65px;
+			-ms-grid-gap: 65px;
+			 -o-grid-gap: 65px;
+			    grid-gap: 65px;	
+	background-color: transparent;		    
+} 
+
+}
+@media (max-width: 360px){
+	
+}
+@media (max-width: 320px){
+	
+}
+

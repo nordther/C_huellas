@@ -1,0 +1,5 @@
+suites:
+    main:
+        namespace: DejandoHuella
+        psr4_prefix: DejandoHuella
+        src_path: app

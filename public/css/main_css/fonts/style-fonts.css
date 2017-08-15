@@ -1,0 +1,193 @@
+@font-face {
+
+font-family: Luna;
+
+src: url('../../../fonts/Luna.ttf') format('truetype');	 
+
+}
+
+@font-face{
+
+font-family: Lato-Regular;	
+
+src: url('../../../fonts/Lato-Regular.ttf') format('truetype');
+
+}
+
+@font-face {
+  font-family: 'Lobster Two';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lobster Two Bold'), local('LobsterTwo-Bold'), url(http://fonts.gstatic.com/s/lobstertwo/v9/bmdxOflBqMqjEC0-kGsIiIlIZu-HDpmDIZMigmsroc4.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Oswald Light'), local('Oswald-Light'), url(http://fonts.gstatic.com/s/oswald/v13/HqHm7BVC_nzzTui2lzQTDVtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+}
+
+p{
+	text-align: justify;
+	font-size: 13px;
+	font-family: "Verdana",Geneva,sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Luna';
+	text-align: center;	
+	color: #FF5700;
+	text-shadow: 0 -1px 0 rgba(255,190,25,0.2);
+}
+label{
+	position: relative;
+	font-family: 'Luna';
+	user-select: none;	
+}
+img{
+	user-select: none;	
+}
+a{
+	text-decoration: none;
+}
+
+.label-start{
+	text-align: center;
+}
+
+.label-start > h1, .label-start > h2{
+	position: relative;
+	top: 20%;
+}
+.label-alert-color{
+	color:#FFFFFF;
+}
+.label-color-header-1{	
+	color: #00E9E2;
+}
+.label-color-header-1:hover{	
+	color: #F5F5F5;
+}
+.label-color-header-2{	
+	color: #00dfd8;
+}
+.label-color-header-2:hover{	
+	color: #06B4AF;
+}
+.label-font-size-1{
+	font-size: 40px;
+}
+.label-font-size-2{
+	font-size: 35px;
+}
+.label-font-size-3{
+	font-size: 30px;
+}
+.label-font-size-4{
+	font-size: 25px;
+}
+.label-font-size-5{
+	font-size: 20px;
+}
+.label-font-size-6{
+	font-size: 18px;
+}
+.label-font-size-7{
+	font-size: 16px;
+}
+.label-font-size-8{
+	font-size: 14px;
+}
+.label-font-size-9{
+	font-size: 12px;
+}
+
+/***********/
+
+
+.a-font-size-1{
+	font-size: 10px;
+}
+
+/*Margin de los label*/
+.label-margin-top-1{
+	top: -5px;
+}
+.label-margin-right-1{
+	right: 5px;
+}
+.label-margin-left-1{
+	left: 5px;
+}
+.label-margin-bottom-1{
+	bottom: 5px;
+}
+
+.label-margin-top-2{
+	top: -15px;
+}
+.label-margin-right-2{
+	right: 15px;
+}
+.label-margin-left-2{
+	left: 15px;
+}
+.label-margin-bottom-2{
+	bottom: 15px;
+}
+
+.label-margin-top-3{
+	top: -25px;
+}
+.label-margin-right-3{
+	right: 25px;
+}
+.label-margin-left-3{
+	left: 25px;
+}
+.label-margin-bottom-3{
+	bottom: 25px;
+}
+.label-font-family-neutro{
+	font-family: "Verdana",Geneva,sans-serif;
+}
+/***************************************/
+.footer-color-text{
+	color: #00dfd8;
+	text-align: center;
+}
+/*Font para el nav lateral izquierdo*/
+.nav > ul > li > a{
+	font-size: 13px;
+	text-align: justify;
+	font-family: 'Roboto',sans-serif;
+}
+
+.nav > ul > ul > li > a{
+	font-size: 13px;
+	text-align: justify;
+	font-family: 'Roboto',sans-serif;
+}
+
+.header-topic > h1{	
+	font-family: 'Luna';
+	color: #00dad8;
+}
+.form-header-search > .form-search-col > label{
+	top: 10px;
+	font-family: "Verdana",Geneva,sans-serif;
+}
+
+.form-article-search > .form-search-row-effect-cardview > .form-search-col > label{
+	top: 15px;
+	font-family: "Verdana",Geneva,sans-serif;
+}
+
+.form-article-search > .form-search-row-effect-cardview > .form-search-col > img,
+.form-article-search > .form-search-row-effect-cardview > .form-search-col > button{
+	margin-top: 12px;
+}
+
+.content-text-topic > p{
+	color: #00dad8;
+}
