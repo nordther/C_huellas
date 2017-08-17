@@ -40,7 +40,7 @@
 
 			<div class="form-article-search scroll">
 
-				@for($i = 0 ; $i < 10; $i++)				
+				@foreach($data['dll']['usersSearch'] as $rows)				
 				
 				<div class="form-search-row-effect-cardview form-search-col-dm-h-3" id="targetItem{{$i}}" >				
 					
@@ -67,19 +67,19 @@
 
 						<div class="form-search-col form-search-col-dm-w-2 form-search-col-dm-h-3">
 
-							{!! Form::label(null, 'Nombres' ); !!}
+							{!! Form::label(null, $rows->dp_nombre ); !!}
 
 						</div>
 
 						<div class="form-search-col form-search-col-dm-w-2 form-search-col-dm-h-3">
 
-							{!! Form::label(null, '312554455' ); !!}
+							{!! Form::label(null, $rows->dp_telefono ); !!}
 
 						</div>
 
 						<div class="form-search-col form-search-col-dm-w-3 form-search-col-dm-h-3">
 
-							{!! Form::label(null, 'correoAleatorio'.$i.'@hotmail.com' ); !!}							
+							{!! Form::label(null, $rows->us_email ); !!}							
 
 						</div>	
 
@@ -103,7 +103,7 @@
 
 				</div>				
 
-				@endfor
+				@endforeach
 
 			</div>
 

@@ -220,7 +220,11 @@ class adminController extends Controller
                                     ->where('guitexts.gtxt_id_gtype','=',2)->lists('gtxt_text','cp_id_categoria'),        
                             ],                   
                             "dataForm" => [
-                            'iconUserSearch' => ''
+                            'iconUserSearch' => '',
+                            'usersSearch' => \DB::table('datospersonales')->select('*')
+                                          ->join('users','datospersonales.dp_id','=','users.us_id_datospersonales')
+                                          ->join('rolls','datospersonales.dp_id_roll','=','rolls.rl_id')
+                                          ->join('estadopersonas','datospersonales.dp_id_estp','=','estadopersonas.estp_id')->get()
                     ]                           
              ]; 
 
