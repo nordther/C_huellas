@@ -20,6 +20,10 @@
 		@yield('content-createusersistem')
 
 		@yield('content-createagenda')
+
+
+
+		@yield('content-manuals')
 		
 
 @endsection

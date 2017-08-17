@@ -3,8 +3,6 @@
 	
 
 	@if (($data['authconfirm'] == false) && ($data['multimediaAuth'] == false))
-		
-
 
 		<nav class="nav bg-content-neutro-opacity main-menu-hidde fade-in is-paused" id="main-menu">
 
@@ -12,7 +10,7 @@
 
 				<li>
 
-					<a href="/{{ $data['roll'] }}"  data="/Inicio" onclick="showSubMenu1()" class="a-font-size-1">
+					<a href="/{{ $data['roll'] }}" >
 						
 					@foreach($data['dll']['icon'] as $dll)
 	
@@ -28,7 +26,7 @@
 
 				<li id="targetLoginUsers">
 
-					<a href="#ingresar"  data="/Ingresar" id="nav_btn_login" class="a-font-size-1">
+					<a href="#ingresar"  data="/Ingresar" id="nav_btn_login" class="">
 
 						@foreach($data['dll']['icon'] as $dll)
 	
@@ -48,7 +46,7 @@
 
 				@include('alerts.formAlertAuth')	
 
-				<li class="nav-form-login-hidde" id="nav-form-login-hidde" class="a-font-size-1">
+				<li class="nav-form-login-hidde" id="nav-form-login-hidde" class="">
 
 					<a href="#noticias" data="/Novedades">
 
@@ -66,7 +64,7 @@
 
 				</li>
 
-				<li class="nav-form-login-hidde" id="nav-form-login-hidde" class="a-font-size-1">
+				<li class="nav-form-login-hidde" id="nav-form-login-hidde" class="">
 
 					<a href="#quienessomos" data="/Quienes somos">
 
@@ -84,7 +82,7 @@
 
 				</li>
 
-				<li class="nav-form-login-hidde" id="nav-form-login-hidde" class="a-font-size-1">
+				<li class="nav-form-login-hidde" id="nav-form-login-hidde" class="">
 
 					<a href="#contactenos" data="/Contactenos">
 
@@ -105,7 +103,7 @@
 
 				<li>
 
-					<a href="#Donacion" class="a-font-size-1">
+					<a href="#Donacion" class="">
 
 					@foreach($data['dll']['icon'] as $dll)
 	
@@ -123,7 +121,7 @@
 
 				<li>
 
-					<a href="/Multimedia" class="a-font-size-1">
+					<a href="/Multimedia" class="">
 
 					@foreach($data['dll']['icon'] as $dll)
 	
@@ -151,9 +149,15 @@
 
 				<li>
 
-					<a href="/{{ $data['roll'] }}"  data="/Inicio" onclick="showSubMenu1()" class="a-font-size-1">
+					<a href="/{{ $data['roll'] }}" class="">
 
-						<img src="{{asset('img/icon/icon1.png')}}" alt="" class="img-dm-9 img-margin-top-4">
+						@foreach($data['dll']['icon'] as $dll)
+	
+							@if ($dll->srcapp_filename == 'about.png')
+								<img src="{{asset($dll->srcapp_dir.$dll->srcapp_filename)}}" alt="" class="img-dm-9 img-margin-top-4">
+							@endif
+	
+						@endforeach	
 
 						Inicio
 
@@ -163,7 +167,7 @@
 
 				<li id="targetGestionUsers">
 
-					<a class="a-font-size-1">
+					<a class="">
 
 						<img src="{{asset('img/icon/userAdd.png')}}" class="img-dm-9 img-margin-top-4" id="img-dm-8-login">
 
@@ -177,7 +181,7 @@
 					
 					<li>
 
-						<a href="/{{$data['roll']}}/buscar-usuario" class="a-font-size-1">
+						<a href="/{{$data['roll']}}/buscar-usuario" class="">
 							
 							<img src="{{asset('img/icon/searchIcon.png')}}" class="img-dm-9 img-margin-top-4" >
 
@@ -189,7 +193,7 @@
 					@if($data['permisos']['create'] == true)
 					<li>
 
-						<a href="/Admin/crear/usuario" class="a-font-size-1">
+						<a href="/Admin/crear/usuario" class="">
 							
 							<img src="{{asset('img/icon/createUsers.png')}}" class="img-dm-9 img-margin-top-4" >
 
@@ -206,7 +210,7 @@
 
 				<li id="targetGestionAgenda">
 					
-					<a class="a-font-size-1">
+					<a class="">
 
 						<img src="{{asset('img/icon/agenda.png')}}" class="img-dm-9 img-margin-top-4" id="img-dm-8-login">
 
@@ -220,7 +224,7 @@
 					
 					<li>
 
-						<a href="/{{$data['roll']}}/buscar-agenda" class="a-font-size-1">
+						<a href="/{{$data['roll']}}/buscar-agenda" class="">
 							
 							<img src="{{asset('img/icon/searchIcon.png')}}" class="img-dm-9 img-margin-top-4" id="img-dm-8-login">
 
@@ -232,7 +236,7 @@
 					@if($data['permisos']['create'] == true)
 					<li>
 
-						<a href="/Admin/crear/agenda" class="a-font-size-1">
+						<a href="/Admin/crear/agenda" class="">
 							
 							<img src="{{asset('img/icon/createAgenda.png')}}" class="img-dm-9 img-margin-top-4" id="img-dm-8-login">
 
@@ -248,7 +252,7 @@
 
 				<li id="targetGestionMultimedia">
 					
-					<a class="a-font-size-1">
+					<a class="">
 
 						<img src="{{asset('img/icon/agenda.png')}}" class="img-dm-9 img-margin-top-4" id="img-dm-8-login">
 
@@ -262,7 +266,7 @@
 					
 					<li>
 
-						<a href="/{{$data['roll']}}/buscar-multimedia" class="a-font-size-1">
+						<a href="/{{$data['roll']}}/buscar-multimedia" class="">
 							
 							<img src="{{asset('img/icon/searchIcon.png')}}" class="img-dm-9 img-margin-top-4" id="img-dm-8-login">
 
@@ -274,7 +278,7 @@
 					@if($data['permisos']['create'] == true)
 					<li>
 
-						<a href="/Admin/subir/subir-multimedia" class="a-font-size-1">
+						<a href="/Admin/subir/subir-multimedia" class="">
 							
 							<img src="{{asset('img/icon/createAgenda.png')}}" class="img-dm-9 img-margin-top-4" id="img-dm-8-login">
 
@@ -286,7 +290,19 @@
 					</li>
 					@endif
 
-				</ul>						
+				</ul>
+
+				<li>
+
+					<a href="/Admin/manuals" class="">
+						
+						<img src="{{asset('img/icon/userAdd.png')}}" class="img-dm-9 img-margin-top-4">
+
+						Manual de Usuario
+
+					</a>
+
+				</li>						
 							
 			</ul>
 
@@ -296,13 +312,19 @@
 
 		<nav class="nav bg-content-neutro-opacity main-menu-hidde fade-in is-paused" id="main-menu">
 
-			<ul class="main-menu" class="a-font-size-1">
+			<ul class="main-menu" class="">
 
 				<li>
 
 					<a href="/{{ $data['roll'] }}"  data="/Inicio" onclick="showSubMenu1()">
 
-						<img src="{{asset('img/icon/icon1.png')}}" alt="" class="img-dm-9 img-margin-top-4">
+						@foreach($data['dll']['icon'] as $dll)
+	
+							@if ($dll->srcapp_filename == 'about.png')
+								<img src="{{asset($dll->srcapp_dir.$dll->srcapp_filename)}}" alt="" class="img-dm-9 img-margin-top-4">
+							@endif
+	
+						@endforeach	
 
 						Inicio
 
@@ -312,7 +334,7 @@
 
 				<li>
 
-					<a href="/{{ $data["roll"] }}/Videos" class="a-font-size-1">
+					<a href="/{{ $data["roll"] }}/Videos" class="">
 
 						<img src="{{asset('img/icon/icon9.png')}}" class="img-dm-9 img-margin-top-4" id="img-dm-8-login">
 
@@ -324,7 +346,7 @@
 
 				<li>
 
-					<a href="/{{ $data["roll"] }}/Audios" class="a-font-size-1">
+					<a href="/{{ $data["roll"] }}/Audios" class="">
 
 						<img src="{{asset('img/icon/icon10.png')}}" class="img-dm-9 img-margin-top-4" id="img-dm-8-login">
 
@@ -336,7 +358,7 @@
 
 				<li>
 
-					<a href="/{{ $data["roll"] }}/Galeria" class="a-font-size-1">
+					<a href="/{{ $data["roll"] }}/Galeria" class="">
 
 						<img src="{{asset('img/icon/icon13.png')}}" class="img-dm-9 img-margin-top-4" id="img-dm-8-login">
 
