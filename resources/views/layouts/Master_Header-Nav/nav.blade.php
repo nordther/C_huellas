@@ -169,7 +169,13 @@
 
 					<a class="">
 
-						<img src="{{asset('img/icon/userAdd.png')}}" class="img-dm-9 img-margin-top-4" id="img-dm-8-login">
+						@foreach($data['dll']['icon'] as $dll)
+	
+							@if ($dll->srcapp_filename == 'administratorUsers.png')
+								<img src="{{asset($dll->srcapp_dir.$dll->srcapp_filename)}}" alt="" class="img-dm-9 img-margin-top-4">
+							@endif
+	
+						@endforeach
 
 						Gestion de Usuarios
 
@@ -212,7 +218,13 @@
 					
 					<a class="">
 
-						<img src="{{asset('img/icon/agenda.png')}}" class="img-dm-9 img-margin-top-4" id="img-dm-8-login">
+						@foreach($data['dll']['icon'] as $dll)
+	
+							@if ($dll->srcapp_filename == 'agenda.png')
+								<img src="{{asset($dll->srcapp_dir.$dll->srcapp_filename)}}" alt="" class="img-dm-9 img-margin-top-4">
+							@endif
+	
+						@endforeach
 
 						Gestionar Agenda
 
@@ -254,7 +266,13 @@
 					
 					<a class="">
 
-						<img src="{{asset('img/icon/agenda.png')}}" class="img-dm-9 img-margin-top-4" id="img-dm-8-login">
+						@foreach($data['dll']['icon'] as $dll)
+	
+							@if ($dll->srcapp_filename == 'administratorMulti.png')
+								<img src="{{asset($dll->srcapp_dir.$dll->srcapp_filename)}}" alt="" class="img-dm-9 img-margin-top-4">
+							@endif
+	
+						@endforeach
 
 						Gestionar Multimedia
 
@@ -296,7 +314,13 @@
 
 					<a href="/Admin/manuals" class="">
 						
-						<img src="{{asset('img/icon/userAdd.png')}}" class="img-dm-9 img-margin-top-4">
+						@foreach($data['dll']['icon'] as $dll)
+	
+							@if ($dll->srcapp_filename == 'help.png')
+								<img src="{{asset($dll->srcapp_dir.$dll->srcapp_filename)}}" alt="" class="img-dm-9 img-margin-top-4">
+							@endif
+	
+						@endforeach
 
 						Manual de Usuario
 

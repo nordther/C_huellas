@@ -424,6 +424,23 @@
 				'srcapp_id' => 72,				
 				'srcapp_dir' => 'img/icon/nav/',
 				'srcapp_filename' =>'openid-logo.png',				
+				'srcapp_fileformat' => 'png'],
+
+				[
+				'srcapp_id' => 73,				
+				'srcapp_dir' => 'img/icon/nav/',
+				'srcapp_filename' =>'help.png',				
+				'srcapp_fileformat' => 'png'],
+				
+				[
+				'srcapp_id' => 74,				
+				'srcapp_dir' => 'img/icon/nav/',
+				'srcapp_filename' =>'administratorUsers.png',				
+				'srcapp_fileformat' => 'png'],
+				[
+				'srcapp_id' => 75,				
+				'srcapp_dir' => 'img/icon/nav/',
+				'srcapp_filename' =>'administratorMulti.png',				
 				'srcapp_fileformat' => 'png']
 
 				];
@@ -1859,7 +1876,13 @@
 					 'mdls_url' => '/Admin/subir/multimedia',
 					 'mdls_patch' => 'modulos.functionAdministration.uploadMultimedia.index',
 					 'mdls_wordkey_modul_name' => 'mdls_upload_multimedia',
-					 'mdls_paramt_name' => 'subir-multimedia']      
+					 'mdls_paramt_name' => 'subir-multimedia'],
+
+					 ['mdls_id' => 18,
+					 'mdls_url' => '/Admin/manuals',
+					 'mdls_patch' => 'modulos.functionAdministration.manuals.index',
+					 'mdls_wordkey_modul_name' => 'mdls_manuals_users',
+					 'mdls_paramt_name' => 'manuals']      
 
 					  
 
